@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="inscription.php" method="post" onsubmit="return verif1()">
+      <fieldset class="pf">
+        <legend class="leg">inscription d un client:</legend>
+        <label> nom:</label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="donner le nom svp"
+        /><br />
+        <label>prenom:</label>
+        <input
+          type="text"
+          name="pre"
+          id="pre"
+          placeholder="donner le prenom svp"
+        /><br />
+        <label>tel:</label>
+        <input
+          type="text"
+          name="tel"
+          id="tel"
+          placeholder="donner le tel svp"
+        /><br />
+        <label>adresse:</label>
+        <input
+          type="text"
+          name="adr"
+          id="adr"
+          placeholder="donner l adresse svp"
+          aria-setsize="8"
+        /><br />
+        <label>mot de passe:</label>
+        <input type="password" name="motp" id="motp" />
+        <br />
+        <div>
+          <input type="reset" value="annuler" class="btn" />
+          <input type="submit" value="valider" class="btn" />
+        </div>
+      </fieldset>
+    </form>
+    <script src="Biblio.js"></script>
+  </body>
+</html>

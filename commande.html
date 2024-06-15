@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="commande.php" method="post" onsubmit="return verif2()">
+      <fieldset class="pf">
+        <legend class="leg">commande de pizzas:</legend>
+        <div>
+          <label>type de pizza:</label>
+          <select name="type" id="type">
+            <option value="">choisir une pizza</option>
+            <option value="Fmr">fruits de mer</option>
+            <option value="Mgh">margherita</option>
+            <option value="Nap">napolitaine</option>
+            <option value="Nep">neptune</option>
+            <option value="Roy">royale</option>
+          </select>
+          <label>quantite:</label>
+          <input
+            type="text"
+            name="quant"
+            id="quant"
+            placeholder="donner la quantite svp"
+          />
+        </div>
+        <div>
+          <label>tel:</label>
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            placeholder="donner le numero de tel "
+          />
+          <label>mot de passe:</label>
+          <input
+            type="text"
+            name="motp"
+            id="motp"
+            placeholder="donner le mot de passe svp"
+          />
+        </div>
+        <div>
+          <input type="reset" value="annuler" class="btn" />
+          <input type="submit" value="commander" class="btn" />
+        </div>
+      </fieldset>
+    </form>
+    <script src="Biblio.js"></script>
+  </body>
+</html>

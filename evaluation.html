@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="Biblio.js"></script>
+  </head>
+
+  <body>
+    <form action="evaluation.php" method="post" onsubmit="return verif3()">
+      <fieldset class="pf">
+        <legend class="leg">évaluation d'un client:</legend>
+        <label>tel:</label>
+        <input
+          type="text"
+          name="tel"
+          id="tell"
+          placeholder="donner le tel svp"
+        /><br />
+        <label>nom pizza:</label>
+        <input
+          type="text"
+          name="npizza"
+          id="npizza "
+          placeholder="donner le nom de pizza svp"
+        />
+        <br />
+        <label>évaluation:</label>
+        <input
+          type="text"
+          name="eval"
+          id="eval"
+          placeholder="donner votre évaluation svp"
+        /><br />
+        <div>
+          <input type="reset" value="annuler" class="btn" />
+          <input type="submit" value="valider" class="btn" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
